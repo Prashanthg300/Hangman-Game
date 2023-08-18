@@ -1,7 +1,7 @@
 #Author - Prashanth.G
 
 import random
-
+from replit import clear
 from hangman_words import word_list
 from hangman_art import logo
 from hangman_art import stages
@@ -13,6 +13,7 @@ word = list("_" * len(chosen_word))
 lives = 6
 while lives > 0:
     guess = input("Guess a letter: ").lower()
+    clear()
     if guess in chosen_word:
         if guess in word:
             print(f"You have already guessed {guess}")
