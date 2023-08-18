@@ -8,7 +8,6 @@ from hangman_art import stages
 
 print(logo)
 chosen_word = random.choice(word_list)
-print(chosen_word)
 word = list("_" * len(chosen_word))
 lives = 6
 while lives > 0:
